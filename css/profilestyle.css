@@ -34,6 +34,7 @@ header{
     padding: 0px 16px;
     background-color: #222;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px 0px;
+    max-width: 100%;
 }
 
 .left-section{
@@ -96,7 +97,7 @@ header{
     margin-bottom: 16px;
     display: flex;
     align-items: center;
-    width: 724px;
+    width: 400px;
     padding: 14px;
     border-radius: 28px;
     background-color: #222;
