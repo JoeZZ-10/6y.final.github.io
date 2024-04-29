@@ -138,15 +138,14 @@
   position: relative;
   background-color: var(--main-color);
   color: #fff; /* Change text color to improve contrast */
-  border-radius: 30px; /* Increase border-radius for a more rounded button */
-  padding: 12px 20px; /* Increase padding for more space around the text */
-  font-size: 16px; /* Increase font size for better readability */
+  border-radius: 15px; /* Increase border-radius for a more rounded button */
+  padding: 8px 14px; /* Increase padding for more space around the text */
+  font-size: 12px; /* Increase font size for better readability */
   text-align: center;
   transition: background-color 0.3s ease-in-out; /* Simplified transition */
   border: none; /* Remove border to create a cleaner look */
   cursor: pointer; /* Change cursor to indicate interactivity */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow */
-}
+} 
 
 .right-section .btn:hover {
   background-color: var(--main-color-lighter); /* Darken the button on hover */
