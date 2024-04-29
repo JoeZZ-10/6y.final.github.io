@@ -125,7 +125,10 @@
     cursor: pointer;
     padding-right: 18px;
 }
-
+.dark i{
+    font-size: 35px; 
+    color:rgb(255, 255, 255);
+ }
 .right-section .btn {
   position: relative;
   background-color: var(--main-color);
