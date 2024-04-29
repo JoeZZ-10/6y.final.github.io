@@ -355,38 +355,39 @@
 }
 
 /* Here is the dark  mode styling , we will make JS coe to get it working  */
+/* CSS */
 .dark-mode {
     background-color: #000000;
-    color: #fff;
-  }
-.dark-mode  body{
-    font-family: "Roboto", sans-serif;
-    background-color: #000000;
-    margin: 0;
-  }
+    color: #ffffff; /* Change text color to white */
+}
 
-  
-  .dark-mode .content-section .button a {
-    background-color: #fffff;
-    color: #000;
-  }
-  .dark-mode .content-section .button a:hover{
-    background-color: #141414;
-    color: #d2bc9a;
-  }
-  
-  .dark-mode .content-section .social i {
-    color: #fff;
-  }
-  .dark-mode .section {
-    background-color: #000;
-  }
-  .dark-mode .content-section .content h3 {
-    color: antiquewhite;
-  }
-  .dark-mode .content-section .social i:hover /*test*/ {
-    color: #d2bc9a;
-  } /*Dark mode DONE!!*/
+.dark-mode .btn {
+    background-color: #f5be6b; /* Change button background color */
+    color: #000000; /* Change button text color */
+}
+
+.dark-mode .content-section {
+    background-color: #000000; /* Change content section background color */
+}
+
+.dark-mode .content-section .button a {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.dark-mode .content-section .button a:hover {
+    background-color: rgb(188, 225, 5);
+    color: black;
+}
+
+.dark-mode .content-section .social i {
+    color: #ffffff; /* Change social icon color */
+}
+
+.dark-mode .content-section .social i:hover {
+    color: black;
+}
+
 .btn {
     background-color: #000000;
     color: #f5be6b;
