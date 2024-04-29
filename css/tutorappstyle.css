@@ -46,6 +46,7 @@ header{
   padding: 0px 16px;
   background-color: #222;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px 0px;
+    max-width: 100%;
 }
 
 .left-section{
