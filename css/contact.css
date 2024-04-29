@@ -175,7 +175,7 @@ display:flex
     text-decoration: none;
     list-style-type: none;
 } */
-#toggler {
+ #toggler {
     -webkit-appearance: none;
     height: 40px;
     width: 80px;
@@ -184,7 +184,7 @@ display:flex
     top: 1.6rem;
     right: 2rem;
     background: transparent;
-    box-shadow: 3px 3px 6px #aaa7 , -3px -3px 6px #fff,inset 3px 3px 6px #aaa7 , inset -3px -3px 6px #fff;
+    box-shadow: 3px 3px 6px  #5c5454 , -3px -3px 6px #5c5454,inset 3px 3px 6px #000 , inset -3px -3px 6px #000;
     cursor: pointer;
 }
  #toggler:checked::before{
@@ -206,31 +206,31 @@ display:flex
     transition-property: left, ;
  }
 
- body.dark #toggler{
+  body.dark #toggler{
     box-shadow: 3px 3px 6px #575757 , -3px -3px 6px #111,inset 3px 3px 6px #575757 , inset -3px -3px 6px #111;
  }
 
  body.dark #toggler::before{
-    background: #afafaf75;
+    background:  #f5be6b;
  }
 
- .contactpage {
+  .contactpage {
     min-height: 100vh;
     width: 100%;
-    background: #f5be6b;
+    background-image: linear-gradient( #ffffff,#f5be6b);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8rem 0;
  }
-  .contactpage .contactForm {
+   .contactpage .contactForm {
     height: fit-content;
     padding: 1.8rem 0;
     max-width: 580px;
     width: 450px;
     border-radius: 1rem;
-    background: transparent;
-    box-shadow: 11px 11px 16px #000, -11px -11px 16px #000;
+    background: #f5be6b ;
+    box-shadow: 11px 11px 16px #999292, -11px -11px 16px #999292 ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,24 +258,27 @@ display:flex
     color: #000;
   }
 
-  body.dark .contactpage .contactForm .inputGroup label {
+   body.dark .contactpage .contactForm .inputGroup label {
    font-size: 1.4rem;
    font-family: "Quicksand", sans-serif;
    font-weight: 600;
-   color: #fff;
+   color: #f5be6b;
  }
+
   .inputGroup input[type="text"],
+  .inputGroup input[type="email"],
   .inputGroup textarea {
-    border: none;
-    background: transparent;
+    background:antiquewhite;
+    border: -10px #000;
+    border-radius: 5px;
     outline: none;
     padding: 0.6rem 0.2rem;
     font-size: 1.4rem;
     font-family: "Quicksand", sans-serif;
     font-weight: 600;
-    color: #767676;
-    box-shadow: inset 3px 3px 9px #000 , inset -3px -3px 9px #000;
+    color: #767373;
   }
+
 
   .inputGroup textarea {
     height: 100px;
@@ -285,7 +288,6 @@ display:flex
   .inputGroup textarea::-webkit-scrollbar {
     width: 0;
   }
- 
   .inputGroup input[type="submit"] {
     width: fit-content;
     padding: 0.4rem 1.4rem;
@@ -293,17 +295,18 @@ display:flex
     color: #fff;
     border: none;
     outline: none;
-    box-shadow: 4px 4px 5px #000 , -4px -4px 5px #000;
+    box-shadow: 4px 4px 5px #766f6f , -4px -4px 5px #766f6f ;
     cursor: pointer;
-    background: #000;
+    background: #1a1919;
   }
+  
 
   body.dark .contactpage {
     background: #222;
  }
  
  body.dark .contactpage .heading {
-    color: #ddd;
+    color:  #f5be6b;
 
  }
  body.dark .contactpage .contactForm {
@@ -315,18 +318,34 @@ display:flex
     color: #ddd;
  }
 
- body.dark .inputGroup input[type="text"],
- body.dark .inputGroup textarea {
+  body.dark  .inputGroup input[type="text"],
+ body.dark .inputGroup input[type="email"],
+ body.dark  .inputGroup textarea {
+    background:#222 ;
+    border: -10px #ffffff;
+    border-radius: 10px;
+    outline: none;
+    padding: 0.6rem 0.2rem;
+    font-size: 1.4rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
     color: #ddd;
-    box-shadow: inset 4px 4px 7px #0e0e0e, inset -4px -4px 7px #575757;
+  } 
 
- }
-
- body.dark .inputGroup input[type="submit"] {
-    color: #ddd;
+  body.dark .inputGroup input[type="submit"] {
+    color:#f5be6b ;
     background: #000;
     box-shadow: 4px 4px 7px #0e0e0e , -4px -4px 7px #575757;
   }
+ .inputGroup ::placeholder{ 
+   color: #dad8d8;
+
+ }
+
+ body.dark .inputGroup ::placeholder{ 
+   color: #575757;
+
+ }
 
     /*********************** Start Footer ***********************/
     .footer {
