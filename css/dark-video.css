@@ -143,6 +143,10 @@
         cursor: pointer;
         padding-right: 18px;
       }
+        .dark i{
+        font-size: 35px; 
+        color: rgb(250, 251, 235);
+     }
       
       .right-section .btn {
       position: relative;
