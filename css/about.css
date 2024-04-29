@@ -359,7 +359,9 @@
     background-color: #000000;
     color: #ffffff; /* Change text color to white */
 }
-
+.dark-mode body{
+    background-color: #000000;
+}
 .dark-mode .btn {
     background-color: #f5be6b; /* Change button background color */
     color: #000000; /* Change button text color */
