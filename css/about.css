@@ -359,7 +359,7 @@
     background-color: #000000;
     color: #ffffff; /* Change text color to white */
 }
-.dark-mode body{
+.dark-mode .section{
     background-color: #000000;
 }
 .dark-mode .btn {
