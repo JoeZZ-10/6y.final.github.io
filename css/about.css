@@ -374,3 +374,7 @@
   .dark-mode .content-section .social i:hover /*test*/ {
     color: #d2bc9a;
   } /*Dark mode DONE!!*/
+.btn {
+    background-color: #222;
+    color: #f5be6b;
+}
