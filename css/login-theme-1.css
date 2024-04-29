@@ -63,6 +63,7 @@ nav {
     width: 1480px;
     background-color: var(--Sub-color-1);
     padding: 10px;
+    box-shadow: 0px 13px 30px -12px;
 }
 
 nav img {
@@ -146,11 +147,6 @@ nav .searchbutton i:hover {
     color: var(--main-color);
 }
 
-.Tutor {
-    position: relative;
-    right: 58px;
-}
-
 .contact {
     position: relative;
     right: 55px;
@@ -159,20 +155,20 @@ nav .searchbutton i:hover {
 nav .replace {
     color: var(--Sub-color-1);
     outline: none;
-    border: 1px solid rgb(140, 140, 140);
     position: relative;
-    top: 10px;
-    left: -30px;
+    top: 2px;
+    left: -55px;
     padding: 15px;
     width: 45px;
     height: 45px;
-    border:1px solid #d5860e;
-    border-radius: 20px;
     background: none;
+    border: none;
 }
+
 
 nav .replace #icon1 {
     color:#e8a43f;
+    font-size:30px ;
 }
 
 nav .replace #icon2 {
@@ -185,7 +181,7 @@ nav .replace #icon2 {
     background-color: var(--Sub-color-1);
     z-index: 30;
     position: absolute;
-    top: 84px;
+    top: 80px;
     left: 450px;
     padding: 15px;
     display: none;
@@ -355,7 +351,7 @@ input:focus~i {
 
 /* Start sign-in */
 
-.signin {
+.another {
     background-color: transparent;
     backdrop-filter: blur(20px) ;
     padding: 15px;
@@ -365,19 +361,26 @@ input:focus~i {
     border-radius: 20px;
 }
 
-.signin p {
+.another p {
     text-align: center;
     font-size: 22px;
     font-weight: 600;
 }
 
-.signin p a {
+.another p:first-child {
+    border-bottom: 2px solid var(--Sub-color-1);
+    padding-bottom: 20px;
+    width: 680px;
+    margin-left: -5px;
+}
+
+.another p a {
     text-decoration: none;
     color:var(--main-color);
     padding-left: 10px;
 }
 
-.signin p a:hover {
+.another p a:hover {
     color: var(--Sub-color-1);
     padding: 8px;
     transition-duration: .5s;
@@ -413,7 +416,8 @@ footer .box h3 {
 footer .box .social {
     display: flex;
     margin-bottom: 20px;
-    }
+    list-style: none;
+}
 
     footer .box .social li {
     margin-right: 15px;
