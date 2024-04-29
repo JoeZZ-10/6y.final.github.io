@@ -156,12 +156,13 @@
   }
   
   
-  .header-avatar{
-    width: 26px;
-    height: 26px;
-    padding-right: 18px;
-    margin-top: 3px;
-  }
+  .header-avatar {
+    width: 3vw; 
+    height: auto; 
+    padding-right: 1.5vw; 
+    margin-top: 0.5vw; 
+}
+
   
   /* End Header */
 
