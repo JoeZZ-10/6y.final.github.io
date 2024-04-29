@@ -134,18 +134,18 @@
     padding-right: 18px;
   }
   
- .right-section .btn {
+.right-section .btn {
   position: relative;
   background-color: var(--main-color);
-  color: #fff; /* Change text color to improve contrast */
-  border-radius: 15px; /* Increase border-radius for a more rounded button */
-  padding: 8px 14px; /* Increase padding for more space around the text */
-  font-size: 12px; /* Increase font size for better readability */
+  color: #000;
+  border-radius: 25px;
+  padding: 6px 10px;
+  font-size: 15px;
   text-align: center;
-  transition: background-color 0.3s ease-in-out; /* Simplified transition */
-  border: none; /* Remove border to create a cleaner look */
-  cursor: pointer; /* Change cursor to indicate interactivity */
-} 
+  transition: 0.3s ease-in-out;
+  margin-right: 18px;
+  text-decoration: none;
+  }
 
 .right-section .btn:hover {
   background-color: var(--main-color-lighter); /* Darken the button on hover */
