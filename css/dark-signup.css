@@ -120,6 +120,8 @@
 #dark_mode_icon{
     width: 30px;
     height: 30px;
+    font-size: 35px; 
+    color:rgb(255, 255, 255);
     cursor: pointer;
     padding-right: 18px;
 }
