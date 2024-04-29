@@ -350,12 +350,12 @@
 
 /* Here is the dark  mode styling , we will make JS coe to get it working  */
 .dark-mode {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
   }
 .dark-mode  body{
     font-family: "Roboto", sans-serif;
-    background-image: linear-gradient(to bottom right, #000000, #f5be6b);
+    background-color: #000000;
     margin: 0;
   }
 
@@ -382,6 +382,6 @@
     color: #d2bc9a;
   } /*Dark mode DONE!!*/
 .btn {
-    background-color: #222;
+    background-color: #000000;
     color: #f5be6b;
 }
