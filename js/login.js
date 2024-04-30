@@ -24,7 +24,7 @@ function validateForm() {
         alert("Please enter your password");return false;
     }
     else if(x != "" && y!="") {
-        window.location.href = '/index.html';
+        window.location.href = '../index.html';
     }
 }
 
