@@ -4,15 +4,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: white;
-  margin: 0;
-  padding:0; 
-  box-sizing: border-box;
-  text-transform: capitalize;
-  outline: none;
-  border:none;
-  text-decoration: none;
-  list-style-type: none;
+  background: white; 
 }
 
 :root {
@@ -165,7 +157,9 @@ display:flex
 
 /* End Header */
 
-/* *{
+ 
+
+ *{
   font-family: 'Poppins', sans-serif;
   margin:0;
   padding:0; 
@@ -175,7 +169,7 @@ display:flex
   border:none;
   text-decoration: none;
   list-style-type: none;
-} */
+}
 
 .containe{
   background: linear-gradient(#000 50%, #f5be6b.1%);
