@@ -11,7 +11,7 @@
 
   body {
     font-family: "Roboto", sans-serif;
-    background-image: linear-gradient(to bottom right,f5be6b,#ffffff);
+    background-color: white ;
     margin: 0;
   }
 
@@ -180,7 +180,7 @@
 .section {
     width:100%;
     min-height:100vh;
-   background-image: linear-gradient(to bottom right, white, #f5be6b);
+   background-color:rgb(220, 234, 229);
 
 }
 
@@ -224,7 +224,7 @@
     letter-spacing: 1.5px;
 } 
 .content-section .content  .button a:hover{
-    background-color:  rgb(188, 225, 5);
+    background-color:  rgb(69, 79, 76);
     color: black;
 }
 .content-section .social i{
@@ -361,6 +361,12 @@
 }
 .dark-mode .section{
     background-color: #000000;
+}
+.dark-mode .section h3{
+    color: #e0bb82
+}
+.dark-mode .section h1{
+    color: #f5be6b
 }
 .dark-mode .btn {
     background-color: #f5be6b; /* Change button background color */
