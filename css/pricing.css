@@ -6,6 +6,13 @@ body {
   font-family: "Roboto", sans-serif;
   background: white;
   margin: 0;
+  padding:0; 
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border:none;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 :root {
