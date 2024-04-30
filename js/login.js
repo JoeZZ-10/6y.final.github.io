@@ -24,7 +24,7 @@ function validateForm() {
         alert("Please enter your password");return false;
     }
     else if(x != "" && y!="") {
-        location.replace('/couses-page/html/index.html');
+        location.replace('../index.html');
         return false;
     }
 }
