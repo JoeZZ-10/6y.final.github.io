@@ -349,9 +349,7 @@ nav .replace #icon2 {
     transition-duration: .7s;
 }
 
-/* Start sign-in */
-
-.signin {
+.another {
     background-color: transparent;
     backdrop-filter: blur(20px) ;
     padding: 15px;
@@ -361,27 +359,33 @@ nav .replace #icon2 {
     border-radius: 20px;
 }
 
-.signin p {
+.another p {
     text-align: center;
     font-size: 22px;
     font-weight: 600;
     color: var(--Sub-color-2);
 }
 
-.signin p a {
+.another p:first-child {
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: 20px;
+    width: 680px;
+    margin-left: -5px;
+}
+
+.another p a {
     text-decoration: none;
-    color: var(--main-color);
+    color:var(--main-color);
     padding-left: 10px;
 }
 
-.signin p a:hover {
-    color:var(--Sub-color-2);
+.another p a:hover {
+    color: var(--Sub-color-2);
     padding: 8px;
     transition-duration: .5s;
     margin-left: 5px;
 }
 
-/* End sign-in */
 
 /* end form */
 
