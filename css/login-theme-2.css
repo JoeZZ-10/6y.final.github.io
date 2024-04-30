@@ -153,20 +153,18 @@ nav .searchbutton i:hover {
     right: 55px;
 }
 
+
 nav .replace {
     color: var(--Sub-color-1);
-    background:none ;
+    background: none;
     outline: none;
-    border: 1px solid rgb(140, 140, 140);
     position: relative;
-    top: 10px;
-    left: -30px;
-    border-radius: 45%;
+    top: 2px;
+    left: -55px;
     padding: 15px;
     width: 45px;
     height: 45px;
-    border:1px solid #d5860e;
-    border-radius: 20px;
+    border: none;
 }
 
 nav .replace #icon1 {
@@ -175,8 +173,8 @@ nav .replace #icon1 {
 
 nav .replace #icon2 {
     color: #444;
+    font-size: 30px;
 }
-
 /* Drop-menu-style*/
 
 .dropmenu {
