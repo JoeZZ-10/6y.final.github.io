@@ -59,7 +59,7 @@
         <!-- form -->
         <div class="child-2"> <!-- start login -->
             <h1><i class='bx bxs-user-circle' id="user-circle"></i></h1>
-            <form name="myForm" onsubmit="return validateForm()" method="post">
+            <form name="myForm" onsubmit="return validateForm()" id="loginForm">
                 <div>
                     <input type="text"  id="User" placeholder="User name" name="username" oninput="upperCase()">
                     <i class='bx bxs-user' id="user"></i>
@@ -70,7 +70,7 @@
                 </div>
                 <div>
                     </div>
-                    <button class="log-in">Log in</button>
+                    <button type="submit" class="log-in">Log in</button>
                     <button class="for"><a href="#forget" target="_blank" class="anchor">Forget password?</a></button>
                 </form>
             </div><!-- end login -->
