@@ -378,12 +378,12 @@
 }
 
 .dark-mode .content-section .button a {
-    background-color: black;
+    background-color: #f5be6b;
     color: whitesmoke;
 }
 
 .dark-mode .content-section .button a:hover {
-    background-color: rgb(188, 225, 5);
+    background-color:#e0bb82;
     color: black;
 }
 
