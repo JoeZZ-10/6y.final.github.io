@@ -20,9 +20,11 @@ function validateForm() {
     if (x == "" ) {
         alert("Please enter your username");return false;
     }
-    else if(y == "")
-    {
+    else if(y == "") {
         alert("Please enter your password");return false;
+    }
+    else if(x != "" && y!="") {
+        window.location.href = '/index.html';
     }
 }
 
@@ -74,3 +76,4 @@ replacebutton.addEventListener('click', function () {
         theme1.removeAttribute('disabled');
     }
 });
+
