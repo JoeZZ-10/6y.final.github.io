@@ -79,36 +79,6 @@ replacebutton.addEventListener('click', function () {
 });
 
 
-/* local-storage */
 
-let form = document.getElementById('loginForm');
-form.addEventListener('submit', function(event) {
-event.preventDefault();
-let username = document.getElementById('User').value;
-let password = document.getElementById('pass').value;
-
-// save data in local storage
-localStorage.setItem('username', username);
-localStorage.setItem('password', password);
-
-});
-
-window.addEventListener('load', function() {
-
-// call data from local storage
-
-let storedUsername = localStorage.getItem('username');
-let storedPassword = localStorage.getItem('password');
-
-// fill inputs automatically
-
-if (storedUsername) {
-    document.getElementById('User').value = storedUsername;
-}
-
-if (storedPassword) {
-    document.getElementById('pass').value = storedPassword;
-}
-});
 
 
