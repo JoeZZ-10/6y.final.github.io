@@ -61,7 +61,7 @@
 
     </header>
 
-    <div class="profile-page">
+        <div class="profile-page">
         <div class="overview">
             <div class="avatar-box">
                 <img class="profile-avatar" src="../images/avatar.png" alt="">
@@ -84,7 +84,11 @@
                         </div>
                         <div>
                             <span class="bold-info">Gender:</span>
-                            <input type="text" class="small-info" value="Male">
+                            <input list="genders" class="small-info" value="Male">
+                            <datalist id="genders">
+                                <option value="Male"></option>
+                                <option value="Female"></option>
+                            </datalist>
                         </div>
                         <div>
                             <span class="bold-info">Country:</span>
@@ -102,7 +106,7 @@
                     <form method="post" target="_blank">
                         <div>
                             <span class="bold-info">Email:</span>
-                            <input type="text" class="small-info" value="yi@nn.com">
+                            <input type="email" class="small-info" value="yi@nn.com">
                         </div>
                         <div>
                             <span class="bold-info">Phone:</span>
@@ -110,7 +114,7 @@
                         </div>
                         <div>
                             <span class="bold-info">Date Of Birth:</span>
-                            <input type="text" class="small-info" value="1/1/2000">
+                            <input type="date" class="small-info" value="2006-01-01">
                         </div>
                         <div>
                             <input type="submit" class="edit-info" value="Save Changes">
@@ -128,11 +132,11 @@
                         </div>
                         <div>
                             <span class="bold-info">Prog. Language:</span>
-                            <input type="text" class="small-info" value="JavaSCript">
+                            <input type="text" class="small-info" value="JavaScript">
                         </div>
                         <div>
                             <span class="bold-info">Years Of Experience:</span>
-                            <input type="text" class="small-info" value="5 Years">
+                            <input type="number" class="small-info" value="5">
                         </div>
                         <div>
                             <input type="submit" class="edit-info" value="Save Changes">
@@ -150,11 +154,11 @@
                         </div>
                         <div>
                             <span class="bold-info">Email:</span>
-                            <input type="text" class="small-info" value="email@website.com">
+                            <input type="email" class="small-info" value="email@website.com">
                         </div>
                         <div>
                             <span class="bold-info">Subscription:</span>
-                            <input type="text" class="small-info" value="Yearly">
+                            <input type="text" class="small-info" value="Yearly" readonly>
                         </div>
                         <div>
                             <input type="submit" class="edit-info" value="Save Changes">
@@ -166,14 +170,13 @@
 
             </div>
 
-
         </div>
         <div class="other-data">
             <div class="skills-card">
                 <h2>My Skills</h2>
                 <p>Complete Skills List</p>
                 <ul class="skills-list">
-                    <li><span class="skill">HTML</span><span class="skill">JavaSCript</span><span class="skill">CSS</span></li>
+                    <li><span class="skill">HTML</span><span class="skill">JavaScript</span><span class="skill">CSS</span></li>
                     <li><span class="skill"d>Engliah</span><span class="skill">Arabic</span><span class="skill">Spanish</span></li>
                     <li><span class="skill">Effiency</span><span class="skill">TeamWorker</span></li>
                     <li><span class="skill">C</span><span class="skill">Python</span><span class="skill">C++</span></li>
