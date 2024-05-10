@@ -43,7 +43,7 @@
           type="text"
           class="searchTerm"
           id="myInput"
-          onkeyup="myFunction()"
+          onkeyup="searchBox()"
           placeholder="Search here..."
         />
         <div class="search-icon">
@@ -257,31 +257,34 @@
     </div>
     <!--@ End Footer -->
   </body>
-    <script>
-    function myFunction() {
-      // Declare variables
-      var input, filter, ul;
-      input = document.getElementById("myInput");
-      filter = input.value.toUpperCase();
-      ul = document.getElementById("myUL");
+  <script>
+    function searchBox() {
+      var input = document.getElementById("myInput");
+      var userInput = input.value.toUpperCase();
+      var ul = document.getElementById("myUL");
 
       // Show or hide the list based on input value
-      if (filter !== "") {
+      if (userInput !== "") {
         ul.style.display = "block";
       } else {
         ul.style.display = "none";
       }
 
-      var li = ul.getElementsByTagName("li");
+      var listItems = ul.getElementsByTagName("li");
 
-      // Loop through all list items, and hide those who don't match the search query
-      for (var i = 0; i < li.length; i++) {
-        var a = li[i].getElementsByTagName("a")[0];
-        var txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          li[i].style.display = "";
+      // Loop through all list  items, and hide those who don't match the search query
+      for (var i = 0; i < listItems.length; i++) {
+        var anchor = listItems[i].querySelector("a");
+
+        // Get the text content of the anchor element and convert it to uppercase
+        var listItemText = anchor.textContent;
+        var listItemTextUpperCase = listItemText.toUpperCase();
+
+        // Check if the search query matches the text content of the list item
+        if (listItemTextUpperCase.includes(userInput)) {
+          listItems[i].style.display = "";
         } else {
-          li[i].style.display = "none";
+          listItems[i].style.display = "none";
         }
       }
     }
