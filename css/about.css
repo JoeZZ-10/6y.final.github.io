@@ -453,8 +453,8 @@
 }
 
 .dark-mode .content-section .button a:hover {
-   background-color:#e0bb82;
-   color: black;
+   background-color: black;
+   color:#f5be6b;
 }
 
 .dark-mode .content-section .social i {
