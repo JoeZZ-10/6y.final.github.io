@@ -17,7 +17,7 @@
 }
 
 html{
-    font-size: 10px;
+
     font-family: "Open Sans", sans-serif;
 }
 
@@ -46,7 +46,7 @@ header{
   padding: 0px 16px;
   background-color: #222;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px 0px;
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .left-section{
@@ -118,6 +118,11 @@ header{
   height: 10px;
 }
 
+.mid-section form:hover{
+  border: 2px solid white;
+
+}
+
 .mid-section input{
   width: 100%;
   color: var(--main-color);
@@ -137,6 +142,11 @@ header{
 }
 .mid-section span{
   padding: 6px;
+}
+
+.mid-section span:hover{
+  color: white;
+  cursor: pointer;
 }
 
 #dark_mode_icon{
@@ -188,9 +198,6 @@ display:flex
     max-width: 80%;
  }
 
- .ad-left-section{
-/*     margin-left: 100px; */
- }
 
  .ad-header{
     font-size: 45px;
@@ -225,7 +232,7 @@ display:flex
  }
 
  .ad-photo{
-/*     margin-right: 100px; */
+    /* margin-right: 100px; */
     padding-left: 100px;
  }
 
@@ -466,6 +473,7 @@ display:flex
 
   .footer .box .social li {
     margin-right: 15px;
+    list-style-type: none;
   }
 
   .footer .box .social li a {
