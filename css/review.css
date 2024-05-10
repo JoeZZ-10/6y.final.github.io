@@ -9,7 +9,7 @@
 * {
     margin: 0;
     font-family: "Poppins", sans-serif;
-
+   
  }  
 
  :root {
@@ -163,7 +163,7 @@ background-color: none;
 }*/
 /*-----------------------------new style code--------------------------*/
 .btn,
-#dark-mode-toggle {
+#dark-mode-toggle /*the ID for the dark mode button*/ {
     width: auto; 
     height: auto; 
     cursor: pointer;
@@ -202,9 +202,9 @@ display:flex
 .container{
     max-width: 100%;
     margin: auto;
-    padding: 1rem;
+    padding: 1rem; /*the 1rem = 16px*/
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr); /*two because of the two columns*/
     gap: 10rem;
 }
 .container-left h1{
@@ -234,6 +234,7 @@ display:flex
     color: var(--white);
     font-size: 1rem;
     cursor: pointer;
+    box-shadow:5px 5px 20px rgb(0, 0,0,0.2) ;
 }
 
 .container-right{
@@ -274,6 +275,7 @@ display:flex
     font-size: 1rem;
     font-weight: 500;
 }
+/* it does not exsist in the html code
 .navigationWrapper {
     position: relative;
     display: flex;
@@ -281,7 +283,7 @@ display:flex
     justify-content: space-between;
     padding: 10px;
     background-color: #222;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 90px 15px 0 rgba(0, 0, 0, 0.2);
     color: white;
     text-transform: uppercase;
 
@@ -289,13 +291,13 @@ display:flex
       padding-left: 20px;
       height: 70px;
     }
-  }
+  } */
 
   .navigation {
     display: flex;
     list-style-type: none;
 
-    li {
+    .li {
       opacity: 1;
       list-style-type: none;
       color: white;
@@ -312,57 +314,10 @@ display:flex
         display: flex;
         align-items: center;
         text-decoration: none;
-        transition: all 0.3s ease-in-out;
         color: white;
 
-        &:hover {
-          color: var(--main-color);
-        }
       }
     }
-  }
-
-  .down-arrow {
-    margin-left: 5px;
-    align-self: flex-start;
-  }
-
-  .search {
-    position: relative;
-    display: flex;
-  }
-
-  .searchTerm {
-    width: 100%;
-    border: 3px solid var(--main-color);
-    padding: 8px;
-    height: 22px;
-    border-radius: 10px;
-    margin-right: 10px;
-  }
-
-  .searchTerm:focus {
-    outline: none;
-  }
-
-  .search-icon {
-    width: 60px;
-    height: 45px;
-    background-color: #333;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  .search-icon i:hover {
-    transform: scale(1.1);
-    color: var(--main-color);
-  }
-  .search-icon i {
-    color: white;
-    font-size: 20px;
-    transition: all 0.1s ease-in-out;
   }
 
   .btn {
@@ -374,6 +329,7 @@ display:flex
     font-size: 15px;
     text-align: center;
     transition: 0.3s ease-in-out;
+    text-decoration: none;
   }
 
   .btn:hover {
@@ -457,16 +413,16 @@ display:flex
   }
 /*---------------------------------------------------------------------------------------*/
 /*---------------------------------dark mode try-----------------------------------------*/
-.dark-mode body{
-    background-color:var(--text-dark);
-}
+/*.dark-mode body{
+    background-color:black;
+} */
 
 .dark-mode .container {
-    background-color:var(--text-dark);
+    background-color:black;
 }
 
 .dark-mode .container-left {
-    background-color: var(--text-dark);
+    background-color: black;
 }
 
 .dark-mode .container-left h1 {
@@ -489,7 +445,7 @@ display:flex
     gap: 2rem;
     background-color:var(--text-dark);
     border-radius: 1rem;
-    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 10px rgb(98, 95, 95);
     cursor: pointer;
 }
 
@@ -500,8 +456,30 @@ display:flex
 }
 #dark-mode-toggle:hover {
     background-color: white;
-    color: var(--text-dark);
+    color: black;
 
 } 
+.dark-mode .footer {
+  background-color: rgb(3, 3, 3);
+  padding: 30px 60px 10px;
+}
+.dark-mode .container-left button{
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  margin-left: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(
+      to right,
+      var(--primary-color),
+      var(--primary-color-dark)
+  );
+  color: var(--white);
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgb(98, 95, 95) ;
+}
+
 /* this page are done for now with the all codes , i edited html file in the dark
 mode button and i edited a lot of things in the css file */
