@@ -15,7 +15,6 @@
 }
 
 html{
-    font-size: 10px;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -106,6 +105,11 @@ header{
     height: 10px;
 }
 
+.mid-section form:hover{
+    border: 2px solid white;
+
+}
+
 .mid-section input{
     width: 100%;
     color: var(--main-color);
@@ -115,16 +119,24 @@ header{
     background: transparent;
     width: 300px;
     padding: 12px;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-family: "Open Sans", sans-serif;
 }
+
 
 .mid-section input::placeholder,span{
     color: var(--main-color);
 
 }
+
+
+
 .mid-section span{
     padding: 6px;
+}
+.mid-section span:hover{
+    color: white;
+    cursor: pointer;
 }
 
 #dark_mode_icon{
@@ -453,6 +465,8 @@ form >div{
 
   .footer .box .social li {
     margin-right: 15px;
+    list-style-type: none;
+    
   }
 
   .footer .box .social li a {
@@ -464,6 +478,7 @@ form >div{
     width: 50px;
     height: 50px;
     transition: 0.3s;
+    
   }
 
   .footer .box .social .facebook:hover {
