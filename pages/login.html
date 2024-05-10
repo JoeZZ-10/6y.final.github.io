@@ -61,11 +61,13 @@
             <h1><i class='bx bxs-user-circle' id="user-circle"></i></h1>
             <form name="myForm" onsubmit="return validateForm()" id="loginForm">
                 <div>
-                    <input type="text"  id="User" placeholder="User name" name="username" oninput="upperCase()">
+                    <input type="text" id="User" name="username" oninput="upperCase()">
+                    <label for="User" class="userlabel">Username</label>
                     <i class='bx bxs-user' id="user"></i>
                 </div>
                 <div>
-                    <input type="password" id="pass"  placeholder="Password" name="pass">
+                    <input type="password" id="pass"  name="pass">
+                    <label for="pass" class="passlabel">Password</label>
                     <i class='bx bxs-lock-alt' id="lock"></i>
                 </div>
                 <div>
