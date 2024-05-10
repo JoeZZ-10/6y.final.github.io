@@ -274,9 +274,36 @@ nav .replace #icon2 {
     color: var(--main-color);
 }
 
-.parent .child-2 input::placeholder{
+.parent .child-2 .userlabel {
+    position: absolute;
+    top: 150px;
+    left: 110px;
     color: var(--Sub-color-2);
 }
+
+.parent .child-2 input:focus~.userlabel {
+    position: absolute;
+    top: 130px;
+    background-color: var(--Sub-color-1);
+    transition-duration: .7s;
+    color: var(--main-color);
+}
+.parent .child-2 .passlabel {
+    position: absolute;
+    top: 225px;
+    left: 110px;
+    color: var(--Sub-color-2);
+}
+
+.parent .child-2 input:focus~.passlabel {
+    position: absolute;
+    top: 205px;
+    background-color: var(--Sub-color-1);
+    transition-duration: .7s;
+    color: var(--main-color);
+}
+
+
 
 .parent .child-2 #user {
     position: absolute;
@@ -429,19 +456,33 @@ footer .box .social li a {
     height: 50px;
     transition: 0.3s;
     text-decoration: none;
+    border-radius: 50%;
 }
 
 footer .box .social .facebook:hover {
     background-color: #0d4793;
+    border-radius: 5%;
 }
 
 footer .box .social .twitter:hover {
     background-color: #1da1f2;
+    border-radius: 5%;
 }
 
-    footer .box .social .youtube:hover {
-        background-color: #ff0000;
+footer .box .social .youtube:hover {
+    background-color: #ff0000;
+    border-radius: 5%;
     }
+
+footer .box .text {
+        line-height: 2;
+        color: #b9b9b9;
+}
+
+footer .box .line {
+        color: #b9b9b9;
+        margin-bottom: 30px;
+}
 
 footer .box .text {
         line-height: 2;
